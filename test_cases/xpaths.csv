@@ -1,0 +1,46 @@
+XPath
+input[1]
+input[@name='dropdown-selection' and @type='hidden']
+/body/div[1]/header/div/div[1]/div[1]/div[2]/input[1]
+"input[contains(@class, 'nav-progressive-attribute')]"
+input[@name='dropdown-selection']
+input[@type='hidden']
+//*[@id='unifiedLocation1ClickAddress']
+"//*[@id='unifiedLocation1ClickAddress' and contains(@class, 'nav-progressive-attribute')]"
+"input[contains(@class, 'nav-progressive-attribute')]"
+"//*[@id='ubbShipTo' and contains(@class, 'nav-progressive-attribute')]"
+/body/div[1]/header/div/div[1]/div[1]/div[2]/input[2]
+input[@name='dropdown-selection-ubb']
+input[@type='hidden']
+//*[@id='ubbShipTo']
+input[@name='dropdown-selection-ubb' and @type='hidden']
+input[2]
+"//*[@id='glowValidationToken' and contains(@class, 'nav-progressive-attribute')]"
+"input[contains(@class, 'nav-progressive-attribute')]"
+input[3]
+input[@name='glow-validation-token' and @type='hidden']
+//*[@id='glowValidationToken']
+input[@type='hidden']
+/body/div[1]/header/div/div[1]/div[1]/div[2]/input[3]
+input[@name='glow-validation-token']
+//*[@id='glowDestinationType']
+input[@name='glow-destination-type' and @type='hidden']
+"input[contains(@class, 'nav-progressive-attribute')]"
+input[@name='glow-destination-type']
+input[@type='hidden']
+"//*[@id='glowDestinationType' and contains(@class, 'nav-progressive-attribute')]"
+input[4]
+/body/div[1]/header/div/div[1]/div[1]/div[2]/input[4]
+"//label[contains(text(), 'Search Amazon.in')]//input"
+input[@name='field-keywords' and @type='text']
+input[@type='text']
+/body/div[1]/header/div/div[1]/div[2]/div/form/div[2]/div[1]/div/input
+//*[@id='twotabsearchtextbox']
+"input[contains(@class, 'nav-input') and contains(@class, 'nav-progressive-attribute')]"
+"//*[@id='twotabsearchtextbox' and contains(@class, 'nav-input') and contains(@class, 'nav-progressive-attribute')]"
+input[@name='field-keywords']
+input[@type='submit']
+/body/div[1]/header/div/div[1]/div[2]/div/form/div[3]/div/span/input
+"input[contains(@class, 'nav-input') and contains(@class, 'nav-progressive-attribute')]"
+"//*[@id='nav-search-submit-button' and contains(@class, 'nav-input') and contains(@class, 'nav-progressive-attribute')]"
+//*[@id='nav-search-submit-button']

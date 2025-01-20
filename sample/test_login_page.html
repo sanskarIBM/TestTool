@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enterprise Login Portal</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f0f2f5;
+        }
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            background: white;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .content-area {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .login-container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .input-wrapper {
+            position: relative;
+        }
+        .input-wrapper input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .input-wrapper i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #2980b9;
+        }
+        .loading {
+            display: none;
+            margin-left: 10px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>Enterprise Portal</h1>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" id="help-link">Help</a></li>
+                    <li><a href="#" id="contact-link">Contact</a></li>
+                </ul>
+            </aside>
+
+            <main class="content-area">
+                <div class="login-container">
+                    <h2 id="form-title">Authentication Required</h2>
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="username">Username or Email:</label>
+                            <div class="input-wrapper">
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    class="form-control"
+                                    data-testid="username-input"
+                                    autocomplete="off"
+                                >
+                            </div>
+                            <div class="error-message" id="username-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <div class="input-wrapper">
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    class="form-control"
+                                    data-testid="password-input"
+                                >
+                            </div>
+                            <div class="error-message" id="password-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" id="login-button" class="btn btn-primary">
+                                <span class="button-text">Sign In</span>
+                                <span class="loading">...</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Simulate complex UI changes and dynamic behavior
+        setTimeout(() => {
+            // Change form structure and attributes
+            document.getElementById('username').setAttribute('data-testid', 'email-input');
+            document.getElementById('password').setAttribute('data-testid', 'pwd-input');
+
+            // Change IDs
+            document.getElementById('username').id = 'email';
+            document.getElementById('password').id = 'pwd';
+            document.getElementById('login-button').id = 'submit-auth';
+
+            // Change text content
+            document.querySelector('.button-text').textContent = 'Authenticate';
+            document.querySelector('#form-title').textContent = 'Login Required';
+
+            // Add new elements
+            const rememberMe = document.createElement('div');
+            rememberMe.className = 'form-group';
+            rememberMe.innerHTML = `
+                <label>
+                    <input type="checkbox" id="remember" name="remember">
+                    Remember me
+                </label>
+            `;
+            document.querySelector('form').insertBefore(
+                rememberMe,
+                document.querySelector('form').lastElementChild
+            );
+
+            // Change form structure
+            document.querySelectorAll('.input-wrapper').forEach(wrapper => {
+                const input = wrapper.querySelector('input');
+                const newWrapper = document.createElement('div');
+                newWrapper.className = 'field-container';
+                wrapper.parentNode.replaceChild(newWrapper, wrapper);
+                newWrapper.appendChild(input);
+            });
+
+            // Add dynamic validation
+            document.querySelectorAll('input').forEach(input => {
+                input.addEventListener('blur', () => {
+                    const errorDiv = document.getElementById(`${input.id}-error`);
+                    if (errorDiv && !input.value) {
+                        errorDiv.style.display = 'block';
+                        errorDiv.textContent = 'This field is required';
+                    }
+                });
+            });
+        }, 5000);
+    </script>
+</body>
+</html>

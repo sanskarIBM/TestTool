@@ -1,0 +1,13 @@
+selenium~=4.27.1
+langchain
+openai
+pytest~=8.3.4
+python-dotenv~=1.0.1
+beautifulsoup4~=4.12.3
+
+groq~=0.13.1
+webdriver-manager~=4.0.2
+numpy~=2.2.1
+pandas~=2.2.3
+scikit-learn~=1.6.1
+tensorflow~=2.18.0

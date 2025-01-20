@@ -1,0 +1,225 @@
+{
+    "page_url": "http://books.toscrape.com/",
+    "elements": [
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[1]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[2]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[3]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[4]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[5]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[6]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[7]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[8]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[9]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[10]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[11]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[12]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[13]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[14]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[15]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[16]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[17]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[18]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[19]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        },
+        {
+            "tag_name": "button",
+            "class": "btn btn-primary btn-block",
+            "text": "Add to basket",
+            "all_xpaths": [
+                "/body/div/div/div/div/section/div[2]/ol/li[20]/article/div[2]/form/button",
+                "button[contains(@class, 'btn') and contains(@class, 'btn-primary') and contains(@class, 'btn-block')]",
+                "button[@type='submit']",
+                "button[contains(text(), 'Add to basket')]"
+            ]
+        }
+    ]
+}
