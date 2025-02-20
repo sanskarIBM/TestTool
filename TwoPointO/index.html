@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Fields Test</title>
+    <script>
+        function changeDOM() {
+            let inputFields = document.querySelectorAll("input[type='text']");
+            inputFields.forEach(field => {
+                field.id = "textField" + Math.floor(Math.random() * 1000);
+            });
+        }
+
+        function showNextField(currentField, nextFieldId) {
+            let value = currentField.value.trim();
+            if (value !== "") {
+                let nextField = document.getElementById(nextFieldId);
+                if (nextField) {
+                    nextField.style.display = "block";
+                }
+            }
+        }
+
+        function initializeForm() {
+            let middleName = document.getElementById("middleName");
+            let lastName = document.getElementById("lastName");
+            let submitBtn = document.getElementById("submitBtn");
+
+            middleName.style.display = "none";
+            lastName.style.display = "none";
+            submitBtn.style.display = "none";
+        }
+
+        function revealSubmitButton() {
+            let lastName = document.getElementById("lastName").value.trim();
+            let submitBtn = document.getElementById("submitBtn");
+            if (lastName !== "") {
+                submitBtn.style.display = "block";
+            }
+        }
+
+        setInterval(changeDOM, 5000); // Change ID every 5 seconds
+        window.onload = initializeForm;
+    </script>
+</head>
+<body>
+    <h2>Test Page for Dynamic XPaths</h2>
+
+    <input type="text" id="firstName" placeholder="First Name" onblur="showNextField(this, 'middleName')"><br><br>
+
+    <input type="text" id="middleName" placeholder="Middle Name" onblur="showNextField(this, 'lastName')"><br><br>
+
+    <input type="text" id="lastName" placeholder="Last Name" onblur="revealSubmitButton()"><br><br>
+
+    <button id="submitBtn">Submit</button>
+
+</body>
+</html>
